@@ -1,0 +1,19 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UnityCloud.cs">
+    <Files>
+      <File FileName="../../Clumsy Polygons/Assets/Scripts/GameControl/TouchControl.cs" Line="6" Column="2" />
+      <File FileName="Assets/Scripts/Tap.cs" Line="176" Column="52" />
+      <File FileName="Assets/Scripts/GameControl.cs" Line="146" Column="48" />
+      <File FileName="Assets/Scripts/RabbitController.cs" Line="281" Column="54" />
+      <File FileName="Assets/Scripts/FadeInFadeOut.cs" Line="33" Column="4" />
+      <File FileName="Assets/Scripts/MyImpact.cs" Line="6" Column="29" />
+      <File FileName="Assets/Scripts/MyRevMob.cs" Line="42" Column="10" />
+      <File FileName="Assets/Scripts/UnityCloud.cs" Line="21" Column="25" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

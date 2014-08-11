@@ -1,0 +1,139 @@
+fileFormatVersion: 2
+guid: d6a6086f9917d47aeaedab93553ffc13
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 512
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: earRight
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 302
+        width: 86
+        height: 182
+      alignment: 9
+      pivot: {x: .762188673, y: .282922417}
+    - name: earLeft
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 329
+        width: 105
+        height: 173
+      alignment: 9
+      pivot: {x: .125415042, y: .0344705731}
+    - name: body
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 90
+        width: 235
+        height: 202
+      alignment: 9
+      pivot: {x: .480957061, y: .0592563003}
+    - name: blinkRight
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 288
+        width: 39
+        height: 24
+      alignment: 9
+      pivot: {x: .920340538, y: .668136597}
+    - name: blikLeft
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 288
+        width: 38
+        height: 24
+      alignment: 9
+      pivot: {x: .134968802, y: .615594208}
+    - name: coelho_5
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 222
+        width: 75
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: cheek
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 135
+        width: 163
+        height: 105
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: noseAndMouth
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 97
+        width: 120
+        height: 115
+      alignment: 9
+      pivot: {x: .481332898, y: .636352003}
+    - name: footRight
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 107
+        height: 51
+      alignment: 9
+      pivot: {x: .871576846, y: .884276092}
+    - name: footLeft
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1
+        width: 107
+        height: 50
+      alignment: 9
+      pivot: {x: .131098807, y: .903010547}
+  spritePackingTag: 
+  userData: 
