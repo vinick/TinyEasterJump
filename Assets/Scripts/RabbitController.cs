@@ -270,6 +270,15 @@ public class RabbitController : MonoBehaviour {
 					dir.Normalize();
 				
 				rabbit.transform.Translate(dir * 17.5f * Time.deltaTime);
+				
+				if((Input.GetKey(KeyCode.A) ))
+				{
+					rabbit.transform.Translate(Vector3.left * 5 * Time.deltaTime);
+				}
+				else if((Input.GetKey(KeyCode.D) ))
+				{
+					rabbit.transform.Translate(Vector3.right * 5 * Time.deltaTime);
+				}
 			}
 		}
 		else
