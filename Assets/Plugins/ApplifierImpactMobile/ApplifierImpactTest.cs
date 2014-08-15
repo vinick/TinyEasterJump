@@ -3,7 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class ApplifierImpactTest : MonoBehaviour {
-	
+
+	#if (UNITY_ANDROID && !UNITY_EDITOR)
+
 	private bool _campaignsAvailable = false;
 
 	void Awake() {
@@ -61,4 +63,6 @@ public class ApplifierImpactTest : MonoBehaviour {
 			}
 		}
 	}
+
+#endif
 }

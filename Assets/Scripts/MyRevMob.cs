@@ -98,13 +98,17 @@ public class MyRevMob : MonoBehaviour, IRevMobListener {
     }
 
     public void UserClickedInTheAd (string revMobAdType) {
+		#if (UNITY_ANDROID && !UNITY_EDITOR)
 		revmob.HideBanner();
+#endif
 		canRestartGame = true;
         Debug.Log("Ad clicked.");
     }
 
     public void UserClosedTheAd (string revMobAdType) {
+		#if (UNITY_ANDROID && !UNITY_EDITOR)
 		revmob.HideBanner();
+#endif
 		canRestartGame = true;
         Debug.Log("Ad closed.");
     }

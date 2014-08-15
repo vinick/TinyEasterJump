@@ -4,6 +4,7 @@ using System.Collections;
 public class CustomAdMob : MonoBehaviour {
 	
 	public Transform adMob;
+	public Transform adMobInter;
 	bool googleAd;
 	
 	// Use this for initialization
@@ -24,6 +25,17 @@ public class CustomAdMob : MonoBehaviour {
 			if(GameControl.gameOver)
 			{
 				Destroy(adMob.gameObject);
+				
+				if(PlayerPrefs.GetInt("adMob") == 3)
+				{
+					adMobInter.gameObject.SetActive(true);
+					PlayerPrefs.SetInt("adMob", 1);
+				}
+				else
+				{
+					PlayerPrefs.SetInt("adMob", PlayerPrefs.GetInt("adMob") + 1);
+				}
+				
 				googleAd = false;
 			}
 		}

@@ -1,6 +1,17 @@
 fileFormatVersion: 2
 guid: d6a6086f9917d47aeaedab93553ffc13
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: earRight
+    21300002: earLeft
+    21300004: body
+    21300006: blinkRight
+    21300008: blikLeft
+    21300010: coelho_5
+    21300012: cheek
+    21300014: noseAndMouth
+    21300016: footRight
+    21300018: footLeft
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,6 +46,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
@@ -54,6 +66,7 @@ TextureImporter:
         height: 182
       alignment: 9
       pivot: {x: .762188673, y: .282922417}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: earLeft
       rect:
         serializedVersion: 2
@@ -63,6 +76,7 @@ TextureImporter:
         height: 173
       alignment: 9
       pivot: {x: .125415042, y: .0344705731}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: body
       rect:
         serializedVersion: 2
@@ -72,6 +86,7 @@ TextureImporter:
         height: 202
       alignment: 9
       pivot: {x: .480957061, y: .0592563003}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: blinkRight
       rect:
         serializedVersion: 2
@@ -81,6 +96,7 @@ TextureImporter:
         height: 24
       alignment: 9
       pivot: {x: .920340538, y: .668136597}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: blikLeft
       rect:
         serializedVersion: 2
@@ -90,6 +106,7 @@ TextureImporter:
         height: 24
       alignment: 9
       pivot: {x: .134968802, y: .615594208}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: coelho_5
       rect:
         serializedVersion: 2
@@ -99,6 +116,7 @@ TextureImporter:
         height: 52
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: cheek
       rect:
         serializedVersion: 2
@@ -108,6 +126,7 @@ TextureImporter:
         height: 105
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: noseAndMouth
       rect:
         serializedVersion: 2
@@ -117,6 +136,7 @@ TextureImporter:
         height: 115
       alignment: 9
       pivot: {x: .481332898, y: .636352003}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: footRight
       rect:
         serializedVersion: 2
@@ -126,6 +146,7 @@ TextureImporter:
         height: 51
       alignment: 9
       pivot: {x: .871576846, y: .884276092}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: footLeft
       rect:
         serializedVersion: 2
@@ -135,5 +156,6 @@ TextureImporter:
         height: 50
       alignment: 9
       pivot: {x: .131098807, y: .903010547}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

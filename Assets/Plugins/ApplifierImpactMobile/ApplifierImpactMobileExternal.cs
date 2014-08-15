@@ -5,6 +5,8 @@ using System.Runtime.InteropServices;
 
 public static class ApplifierImpactMobileExternal {
 
+	#if (UNITY_ANDROID && !UNITY_EDITOR)
+
 	private static string _logTag = "ApplifierImpactMobile";
 	
 	public static void Log (string message) {
@@ -228,6 +230,7 @@ public static class ApplifierImpactMobileExternal {
 		return applifierImpactUnity.Call<string>("getRewardItemDetailsKeys");
 	}
 	
+#endif
 #endif
 
 }

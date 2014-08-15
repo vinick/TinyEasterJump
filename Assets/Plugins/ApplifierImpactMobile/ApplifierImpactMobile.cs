@@ -4,6 +4,8 @@ using System.Collections.Generic;
 
 public class ApplifierImpactMobile : MonoBehaviour {
 
+	#if (UNITY_ANDROID && !UNITY_EDITOR)
+
 	public string gameId = "";
 	public bool debugModeEnabled = false;
 	public bool testModeEnabled = false;
@@ -327,4 +329,6 @@ public class ApplifierImpactMobile : MonoBehaviour {
 		
 		ApplifierImpactMobileExternal.Log("onCampaignsFetchFailed");
 	}
+
+#endif
 }
