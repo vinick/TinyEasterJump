@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MyImpact : MonoBehaviour {
 
-	#if (UNITY_ANDROID && !UNITY_EDITOR)
+	//#if (UNITY_ANDROID && !UNITY_EDITOR)
 
 	private bool _campaignsAvailable = false;
 	
@@ -16,13 +16,14 @@ public class MyImpact : MonoBehaviour {
 	void Awake() {
 		
 		
-		
+		/*
 		ApplifierImpactMobile.setCampaignsAvailableDelegate(ApplifierImpactCampaignsAvailable);
 		ApplifierImpactMobile.setCloseDelegate(ApplifierImpactClose);
 		ApplifierImpactMobile.setOpenDelegate(ApplifierImpactOpen);
 		ApplifierImpactMobile.setCampaignsFetchFailedDelegate(ApplifierImpactCampaignsFetchFailed);
 		ApplifierImpactMobile.setVideoCompletedDelegate(ApplifierImpactVideoCompleted);
 		ApplifierImpactMobile.setVideoStartedDelegate(ApplifierImpactVideoStarted);
+		*/
 	}
 	
 	void Start()
@@ -41,9 +42,7 @@ public class MyImpact : MonoBehaviour {
 			freeEgg = GameObject.FindGameObjectWithTag("freeEgg");
 			freeEgg.gameObject.SetActive(false);
 		}
-		
-		
-		if(ApplifierImpactMobile.canShowCampaigns() && ApplifierImpactMobile.canShowImpact() && canShowAd && freeEgg != null)
+		else if(/*ApplifierImpactMobile.canShowCampaigns() && ApplifierImpactMobile.canShowImpact() && */canShowAd)
 		{
 			freeEgg.gameObject.SetActive(true);
 		}
@@ -80,8 +79,8 @@ public class MyImpact : MonoBehaviour {
 	
 	public void ShowVideoAd()
 	{
-		ApplifierImpactMobile.showImpact("16-default");
+		//ApplifierImpactMobile.showImpact("16-default");
 	}
 
-#endif
+//#endif
 }

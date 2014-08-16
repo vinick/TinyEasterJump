@@ -28,7 +28,6 @@ public class WP8ADBanner : EventDispatcherBase, GoogleMobileAdBanner {
 	//--------------------------------------
 	
 	public WP8ADBanner(TextAnchor anchor, GADBannerSize size, int id) {
-
 		_id = id;
 		_size = size;
 		_anchor = anchor;

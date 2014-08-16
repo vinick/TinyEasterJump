@@ -1,4 +1,4 @@
-﻿//#define SA_DEBUG_MODE
+﻿#define SA_DEBUG_MODE
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
@@ -53,10 +53,15 @@ public class WP8AdMobController : SA_Singleton<WP8AdMobController>, GoogleMobile
 		AdManager.instance.BannerOnAdOpened = OnBannerAdOpened;
 		AdManager.instance.BannerOnAdClosed = OnBannerAdClosed;
 		AdManager.instance.BannerAdLeftApplication = OnBannerAdLeftApplication;
+
+		SetOrientation(DeviceOrientation.Unknown);
 		#endif
-		
+
 	}
-	
+
+	public void SetOrientation (DeviceOrientation orientation) {
+		AdManager.instance.SetOrientation((int)orientation);
+	}
 	
 	public void Init(string banners_unit_id, string interstisial_unit_id) {
 		if(_IsInited) {
@@ -157,7 +162,7 @@ public class WP8AdMobController : SA_Singleton<WP8AdMobController>, GoogleMobile
 		}
 		
 		#if (UNITY_WP8 && !UNITY_EDITOR) || SA_DEBUG_MODE
-		///////////_GADAddTestDevice(deviceId);
+		AdManager.instance.EnableForceTesting();
 		#endif
 	}
 	

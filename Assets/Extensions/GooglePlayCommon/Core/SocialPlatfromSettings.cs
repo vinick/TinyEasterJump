@@ -9,10 +9,12 @@ using UnityEditor;
 
 public class SocialPlatfromSettings : ScriptableObject {
 
-	public const string VERSION_NUMBER = "3.1";
+	public const string VERSION_NUMBER = "3.2";
 
 	public bool showPermitions = true;
 	public List<string> fb_scopes_list =  new List<string>();
+
+
 	
 
 	//private string TWITTER_CONSUMER_KEY = "wEvDyAUr2QabVAsWPDiGwg";
@@ -54,6 +56,17 @@ public class SocialPlatfromSettings : ScriptableObject {
 					                               );
 					
 					AssetDatabase.CreateAsset(instance, fullPath);
+
+
+					instance.fb_scopes_list.Add("user_about_me");
+					instance.fb_scopes_list.Add("user_friends");
+					instance.fb_scopes_list.Add("email");
+					instance.fb_scopes_list.Add("publish_actions");
+					instance.fb_scopes_list.Add("read_friendlists");
+					instance.fb_scopes_list.Add("user_games_activity");
+					instance.fb_scopes_list.Add("user_activities");
+					instance.fb_scopes_list.Add("user_likes");
+
 					#endif
 				}
 			}

@@ -33,6 +33,10 @@ public class GoogleMobileAdSettingsEditor : Editor {
 	private bool IsWP8SettinsOpened = true;
 
 
+
+	private const string version_info_file = "Plugins/StansAssets/Versions/GMA_VersionInfo.txt"; 
+
+
 	public override void OnInspectorGUI() {
 		settings = target as GoogleMobileAdSettings;
 
@@ -40,7 +44,8 @@ public class GoogleMobileAdSettingsEditor : Editor {
 
 
 
-
+		GeneralOptions();
+		EditorGUILayout.Space();
 		MainSettings();
 		EditorGUILayout.Space();
 		AboutGUI();
@@ -51,8 +56,96 @@ public class GoogleMobileAdSettingsEditor : Editor {
 		}
 	}
 
-	
 
+
+	public static bool IsInstalled {
+		get {
+			if(FileStaticAPI.IsFileExists(PluginsInstalationUtil.ANDROID_DESTANATION_PATH + "androidnative.jar") && FileStaticAPI.IsFileExists(PluginsInstalationUtil.IOS_DESTANATION_PATH + "GoogleMobileAdBanner.h")) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+	}
+	
+	public static bool IsUpToDate {
+		get {
+			if(GoogleMobileAdSettings.VERSION_NUMBER.Equals(DataVersion)) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+	}
+	
+	
+	public static string DataVersion {
+		get {
+			if(FileStaticAPI.IsFileExists(version_info_file)) {
+				return FileStaticAPI.Read(version_info_file);
+			} else {
+				return "Unknown";
+			}
+		}
+	}
+
+
+	
+	public static void UpdateVersionInfo() {
+		FileStaticAPI.Write(version_info_file, GoogleMobileAdSettings.VERSION_NUMBER);
+
+	
+	}
+
+
+
+	private void GeneralOptions() {
+		
+		if(!IsInstalled) {
+			EditorGUILayout.HelpBox("Install Required ", MessageType.Error);
+			
+			EditorGUILayout.BeginHorizontal();
+			EditorGUILayout.Space();
+			Color c = GUI.color;
+			GUI.color = Color.cyan;
+			if(GUILayout.Button("Install Plugin",  GUILayout.Width(120))) {
+				PluginsInstalationUtil.Android_InstallPlugin();
+				PluginsInstalationUtil.IOS_InstallPlugin();
+				UpdateVersionInfo();
+			}
+			GUI.color = c;
+			EditorGUILayout.EndHorizontal();
+		}
+		
+		if(IsInstalled) {
+			if(!IsUpToDate) {
+				EditorGUILayout.HelpBox("Update Required \nResources version: " + DataVersion + " Plugin version: " + GoogleMobileAdSettings.VERSION_NUMBER, MessageType.Warning);
+				
+				
+				EditorGUILayout.BeginHorizontal();
+				EditorGUILayout.Space();
+				Color c = GUI.color;
+				GUI.color = Color.cyan;
+				if(GUILayout.Button("Update to " + GoogleMobileAdSettings.VERSION_NUMBER,  GUILayout.Width(250))) {
+					PluginsInstalationUtil.Android_UpdatePlugin();
+					PluginsInstalationUtil.IOS_UpdatePlugin();
+					UpdateVersionInfo();
+				}
+				
+				GUI.color = c;
+				EditorGUILayout.Space();
+				EditorGUILayout.EndHorizontal();
+				
+			} else {
+				EditorGUILayout.HelpBox("Google Mobile Ad Plugin v" + GoogleMobileAdSettings.VERSION_NUMBER + " is installed", MessageType.Info);
+				
+			}
+		}
+		
+		
+		EditorGUILayout.Space();
+		
+	}
 
 
 	public void MainSettings() {

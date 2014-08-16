@@ -29,14 +29,9 @@ public class AdMobBanner : MonoBehaviour {
 	// --------------------------------------
 	
 	void Awake() {
-
-
 		if(!GoogleMobileAd.IsInited) {
 			GoogleMobileAd.Init();
 		}
-
-
-
 	}
 
 	void Start() {

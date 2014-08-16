@@ -15,8 +15,8 @@ using System.Collections;
 public class GPScore  {
 
 
-	private int _rank;
-	private int _score;
+	private int _rank = 0;
+	private int _score = 0;
 
 	private string _playerId;
 	private string _leaderboardId;

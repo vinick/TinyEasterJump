@@ -581,6 +581,23 @@ public class AndroidNative {
 	}
 
 
+	public static void SaveToGalalry(string ImageData) {
+		CallActivityFunction("SaveToGalalry", ImageData);
+	}
+
+
+	public static void GetImageFromGallery() {
+		Debug.Log("GetImageFromGallery");
+		CallActivityFunction("GetImageFromGallery");
+	}
+	
+
+	
+	public static void GetImageFromCamera() {
+		Debug.Log("GetImageFromCamera");
+		CallActivityFunction("GetImageFromCamera");
+	}
+
 
 	private static void CallActivityFunction(string methodName, params object[] args) {
        #if UNITY_ANDROID

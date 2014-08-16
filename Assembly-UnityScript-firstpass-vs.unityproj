@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_4_5_3;UNITY_4_5;UNITY_WP8;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_LAZY_METHOD_CACHING;ENABLE_AUDIO_FMOD;ENABLE_TERRAIN;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;UNITY_WINRT;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_SERIALIZATION_BY_CODEGENERATION;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_5_3;UNITY_4_5;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -39,15 +39,16 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/PlaybackEngines/WP8Support/Tools/UnityEngine.dll</HintPath>
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Standard Assets\Particles\Legacy Particles\TimedObjectDestructor.js" />
      <None Include="Assets\Plugins\Android\facebook\res\values\attrs.xml" />
+     <None Include="Assets\Plugins\Android\unityads\AndroidManifest.xml" />
      <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_picker_activity_circle_row.xml" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\LitSolidVertexColor.shader" />
      <None Include="Assets\Plugins\Android\facebook\res\values-iw\strings.xml" />
@@ -55,6 +56,7 @@
      <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_picker_search_box.xml" />
      <None Include="Assets\TK2DROOT\tk2d\Goodies\TexturePacker\Exporter\2dtoolkit\exporter.xml" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\SolidVertexColor.shader" />
+     <None Include="Assets\Plugins\Android\unityads\proguard-project.txt" />
      <None Include="Assets\Plugins\Android\facebook\res\values-ldpi\dimens.xml" />
      <None Include="Assets\Plugins\Android\facebook\res\values\colors.xml" />
      <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_friendpickerfragment.xml" />
@@ -81,6 +83,7 @@
      <None Include="Assets\Plugins\Android\facebook\res\values-hdpi\dimens.xml" />
      <None Include="Assets\Plugins\Android\facebook\build.xml" />
      <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_button_blue.xml" />
+     <None Include="Assets\Plugins\Android\unityads\build.xml" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\resources\BlendVertexColor.shader" />
      <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_picker_list_selector.xml" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\LitCutoutVertexColor.shader" />
@@ -92,6 +95,7 @@
      <None Include="Assets\TK2DROOT\tk2d\Editor\EditorUtility.shader" />
      <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />
      <None Include="Assets\Plugins\Android\facebook\res\values-mdpi\dimens.xml" />
+     <None Include="Assets\Plugins\Android\unityads\res\values\strings.xml" />
      <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_picker_list_section_header.xml" />
      <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_picker_title_bar.xml" />
      <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_usersettingsfragment_background_gradient.xml" />
@@ -101,10 +105,11 @@
      <None Include="Assets\Extensions\GoogleMobileAd\Documentation\GMA_VersionNotes.txt" />
      <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_placepickerfragment_list_row.xml" />
      <None Include="Assets\TK2DROOT\tk2dUI_demo\Assets\Font\OldSansBlack\OldSansBlack.fnt" />
+     <None Include="Assets\Plugins\StansAssets\Versions\GMA_VersionInfo.txt" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\LitBlendVertexColor.shader" />
-     <None Include="Assets\PluginsOld\Android\AndroidManifestImpact.xml" />
      <None Include="Assets\Plugins\Android\facebook\res\values\drawables.xml" />
      <None Include="Assets\TK2DROOT\tk2dUI_demo\Assets\Dark\Fonts\Nunito16.fnt" />
+     <None Include="Assets\Plugins\Android\Versions\GMA_VersionInfo.txt" />
      <None Include="Assets\TK2DROOT\tk2dUI_demo\Assets\Dark\Fonts\Nunito32.fnt" />
      <None Include="Assets\Plugins\Android\facebook\proguard-project.txt" />
      <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_loginbutton_silver.xml" />
@@ -113,7 +118,6 @@
      <None Include="Assets\Plugins\Android\res\values\version.xml" />
      <None Include="Assets\Shaders\CustomSelfIluminatedAlpha.shader" />
      <None Include="Assets\Plugins\Android\facebook\res\values-he\strings.xml" />
-     <None Include="Assets\PluginsOld\Android\AndroidManifest.xml" />
      <None Include="Assets\Plugins\Android\facebook\AndroidManifest.xml" />
      <None Include="Assets\Plugins\Android\facebook\res\values-es\strings.xml" />
      <None Include="Assets\Plugins\Android\facebook\res\drawable\com_facebook_button_check.xml" />
@@ -124,7 +128,7 @@
      <None Include="Assets\Plugins\Android\facebook\res\values-xhdpi\dimens.xml" />
      <None Include="Assets\TK2DROOT\tk2d_demo\democameradata\source\democamerafont.fnt" />
  <Reference Include="GoogleAdsWP8">
- <HintPath>C:/Users/Vinicius/Dropbox/ChururuGames/TinyEaster/Assets/Plugins/GoogleAdsWP8.dll</HintPath>
+ <HintPath>/Users/motvinicius/Documents/ChururuGames/Git/TinyEaster/Assets/Plugins/GoogleAdsWP8.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

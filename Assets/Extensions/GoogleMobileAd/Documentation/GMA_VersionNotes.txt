@@ -1,3 +1,9 @@
+3.2:
+Edior Imporvments
+WP8 Test mode added
+WP8 Banners orintation fixed
+WP8 Interstisial Fixes
+
 3.1:
 
 New Features:

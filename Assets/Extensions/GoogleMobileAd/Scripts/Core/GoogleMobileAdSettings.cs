@@ -10,7 +10,7 @@ using UnityEditor;
 
 public class GoogleMobileAdSettings : ScriptableObject {
 
-	public const string VERSION_NUMBER = "3.1";
+	public const string VERSION_NUMBER = "3.2";
 
 
 	public string IOS_InterstisialsUnitId = "";

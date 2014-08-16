@@ -10,7 +10,6 @@ public class CustomAdMob : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		googleAd = true;
-	
 	}
 	
 	// Update is called once per frame
@@ -26,6 +25,7 @@ public class CustomAdMob : MonoBehaviour {
 			{
 				Destroy(adMob.gameObject);
 				
+				/*
 				if(PlayerPrefs.GetInt("adMob") == 3)
 				{
 					adMobInter.gameObject.SetActive(true);
@@ -35,12 +35,16 @@ public class CustomAdMob : MonoBehaviour {
 				{
 					PlayerPrefs.SetInt("adMob", PlayerPrefs.GetInt("adMob") + 1);
 				}
+				*/
 				
 				googleAd = false;
 			}
 		}
-	
-	
+		else
+		{
+			adMobInter.gameObject.SetActive(true);
+		}
 	}
+	
 	
 }

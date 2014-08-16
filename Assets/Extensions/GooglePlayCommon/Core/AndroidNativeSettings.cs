@@ -10,7 +10,7 @@ using UnityEditor;
 
 public class AndroidNativeSettings : ScriptableObject {
 
-	public const string VERSION_NUMBER = "4.2";
+	public const string VERSION_NUMBER = "4.3";
 
 
 	public bool EnableGamesAPI 		= true;
@@ -18,6 +18,10 @@ public class AndroidNativeSettings : ScriptableObject {
 	public bool LoadProfileIcons 	= true;
 	public bool LoadProfileImages 	= true;
 
+
+	public bool ShowStoreKitParams = false;
+	public bool ShowPSSettings = false;
+	public bool ShowActions = false;
 
 
 	public string base64EncodedPublicKey = "REPLACE_WITH_YOUR_PUBLIC_KEY";
@@ -27,9 +31,9 @@ public class AndroidNativeSettings : ScriptableObject {
 
 
 
-	private const string ISNSettingsAssetName = "AndroidNativeSettings";
-	private const string ISNSettingsPath = "Extensions/AndroidNative/Resources";
-	private const string ISNSettingsAssetExtension = ".asset";
+	public const string ANSettingsAssetName = "AndroidNativeSettings";
+	public const string ANSettingsPath = "Extensions/AndroidNative/Resources";
+	public const string ANSettingsAssetExtension = ".asset";
 
 	private static AndroidNativeSettings instance = null;
 
@@ -38,21 +42,21 @@ public class AndroidNativeSettings : ScriptableObject {
 		
 		get {
 			if (instance == null) {
-				instance = Resources.Load(ISNSettingsAssetName) as AndroidNativeSettings;
+				instance = Resources.Load(ANSettingsAssetName) as AndroidNativeSettings;
 				
 				if (instance == null) {
 					
 					// If not found, autocreate the asset object.
 					instance = CreateInstance<AndroidNativeSettings>();
 					#if UNITY_EDITOR
-					string properPath = Path.Combine(Application.dataPath, ISNSettingsPath);
+					string properPath = Path.Combine(Application.dataPath, ANSettingsPath);
 					if (!Directory.Exists(properPath)) {
 						AssetDatabase.CreateFolder("Extensions/", "AndroidNative");
 						AssetDatabase.CreateFolder("Extensions/AndroidNative", "Resources");
 					}
 					
-					string fullPath = Path.Combine(Path.Combine("Assets", ISNSettingsPath),
-					                               ISNSettingsAssetName + ISNSettingsAssetExtension
+					string fullPath = Path.Combine(Path.Combine("Assets", ANSettingsPath),
+					                               ANSettingsAssetName + ANSettingsAssetExtension
 					                               );
 					
 					AssetDatabase.CreateAsset(instance, fullPath);
