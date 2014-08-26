@@ -38,6 +38,7 @@ public class KillRabbit : MonoBehaviour {
 		{
 			if(other.tag == "killBrokens")
 			{
+
 				GameControl.gameOver = true;
 			}
 		}
