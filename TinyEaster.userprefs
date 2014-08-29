@@ -1,11 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Plugins/Android/AndroidManifest.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BoostControl.cs">
     <Files>
-      <File FileName="Assets/Plugins/Android/AndroidManifest.xml" Line="37" Column="48" />
-      <File FileName="Assets/Scripts/GameControl.cs" Line="7" Column="24" />
-      <File FileName="Assets/Scripts/KillRabbit.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/MyRevMob.cs" Line="48" Column="4" />
+      <File FileName="Assets/Plugins/Android/AndroidManifest.xml" Line="104" Column="79" />
+      <File FileName="Assets/Scripts/AdMobStarter.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/StartAdCount.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/UIFade.cs" Line="33" Column="40" />
+      <File FileName="Assets/Scripts/BoostControl.cs" Line="192" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

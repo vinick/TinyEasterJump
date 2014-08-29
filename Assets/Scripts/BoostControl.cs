@@ -177,19 +177,19 @@ public class BoostControl : MonoBehaviour {
 		{
 		case 1:
 			boost1 = true;
-			totalCostAmount += 3;
+			totalCostAmount += 2;
 			break;
 		case 2:
 			boost2 = true;
-			totalCostAmount += 5;
+			totalCostAmount += 3;
 			break;
 		case 3:
 			boost3 = true;
-			totalCostAmount += 8;
+			totalCostAmount += 4;
 			break;
 		case 4:
 			boost4 = true;
-			totalCostAmount += 10;
+			totalCostAmount += 5;
 			break;
 		}
 	}
@@ -206,19 +206,19 @@ public class BoostControl : MonoBehaviour {
 			{
 			case 1:
 				boost1 = false;
-				totalCostAmount -= 3;
+				totalCostAmount -= 2;
 				break;
 			case 2:
 				boost2 = false;
-				totalCostAmount -= 5;
+				totalCostAmount -= 3;
 				break;
 			case 3:
 				boost3 = false;
-				totalCostAmount -= 8;
+				totalCostAmount -= 4;
 				break;
 			case 4:
 				boost4 = false;
-				totalCostAmount -= 10;
+				totalCostAmount -= 5;
 				break;
 			}
 			
@@ -234,19 +234,19 @@ public class BoostControl : MonoBehaviour {
 			{
 			case 1:
 				boost1 = false;
-				totalCostAmount -= 3;
+				totalCostAmount -= 2;
 				break;
 			case 2:
 				boost2 = false;
-				totalCostAmount -= 5;
+				totalCostAmount -= 3;
 				break;
 			case 3:
 				boost3 = false;
-				totalCostAmount -= 8;
+				totalCostAmount -= 4;
 				break;
 			case 4:
 				boost4 = false;
-				totalCostAmount -= 10;
+				totalCostAmount -= 5;
 				break;
 			}
 			

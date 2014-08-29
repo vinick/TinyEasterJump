@@ -53,6 +53,10 @@
      <Compile Include="Assets\EasyTouch\Plugins\Editor\GUIEasytouchCallBack.cs" />
      <Compile Include="Assets\EasyTouch\Plugins\Editor\HTEditorToolKit.cs" />
      <Compile Include="Assets\Editor\UnityAds\Scripts\UnityAdsLegacyCleanup.cs" />
+     <Compile Include="Assets\Extensions\GoogleMobileAd\Scripts\Editor\GoogleMobileAdInit.cs" />
+     <Compile Include="Assets\Extensions\GoogleMobileAd\Scripts\Editor\GoogleMobileAdMenu.cs" />
+     <Compile Include="Assets\Extensions\GoogleMobileAd\Scripts\Editor\GoogleMobileAdSettingsEditor.cs" />
+     <Compile Include="Assets\Extensions\StansAssetsCommon\Editor\PluginsInstalationUtil.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Editor\Camera\tk2dCameraAnchorEditor.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Editor\Camera\tk2dCameraEditor.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Editor\Fonts\tk2dFontBuilder.cs" />
@@ -182,6 +186,7 @@
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-hy-rAM\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\maps_attrs.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\drawable\common_signin_btn_icon_dark.xml" />
+     <None Include="Assets\Plugins\Android\res\values\ids.xml" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ru\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-fr\common_strings.xml" />
@@ -204,12 +209,12 @@
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-km-rKH\auth_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-it\auth_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-tl\auth_strings.xml" />
-     <None Include="Assets\Plugins\Android\AndroidManifestOld.xml" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\Blend2TexVertexColor.shader" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ja\auth_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-lo-rLA\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-fr-rCA\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\color\common_signin_btn_text_dark.xml" />
+     <None Include="Assets\Plugins\Versions\GMA_VersionInfo.txt" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\wallet_styles.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-pt-rBR\auth_strings.xml" />
      <None Include="Assets\TK2DROOT\tk2dUI\Shaders\DepthMaskSolid.shader" />
@@ -245,6 +250,7 @@
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-th\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ko\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values\analytics.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-en-rIN\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ro\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-uk\common_strings.xml" />
@@ -268,11 +274,11 @@
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-th\auth_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ms-rMY\auth_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-pt\common_strings.xml" />
+     <None Include="Assets\Extensions\GoogleMobileAd\Documentation\GMA_VersionNotes.txt" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\color\common_signin_btn_text_light.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-zh-rTW\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-in\common_strings.xml" />
      <None Include="Assets\TK2DROOT\tk2dUI_demo\Assets\Font\OldSansBlack\OldSansBlack.fnt" />
-     <None Include="Assets\Plugins\Android\google-play-services_lib\AndroidManifest.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sl\common_strings.xml" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\LitBlendVertexColor.shader" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ms-rMY\common_strings.xml" />
@@ -285,7 +291,9 @@
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-tl\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-zh-rHK\common_strings.xml" />
      <None Include="Assets\TK2DROOT\tk2dUI_demo\Assets\Dark\Fonts\Nunito32.fnt" />
+     <None Include="Assets\Plugins\StansAssets\Versions\GMA_VersionInfo.txt" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-lt\common_strings.xml" />
+     <None Include="Assets\Plugins\StansAssets\Android\AndroidManifest.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-fr\auth_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sr\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\wallet_strings.xml" />
@@ -298,6 +306,7 @@
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-iw\auth_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-nb\auth_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sl\auth_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values\version.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ar\auth_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-mn-rMN\auth_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-es-rUS\common_strings.xml" />
@@ -305,6 +314,7 @@
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sr\auth_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ca\auth_strings.xml" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\AdditiveVertexColor.shader" />
+     <None Include="Assets\Plugins\WP8\GoogleAds.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ko\auth_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-da\auth_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-lv\auth_strings.xml" />
@@ -316,6 +326,9 @@
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>/Applications/Unity4.6/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.0/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="GoogleAdsWP8">
+ <HintPath>/Users/motvinicius/Documents/ChururuGames/Git/TinyEaster/Assets/Plugins/GoogleAdsWP8.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Cloud">
  <HintPath>/Users/motvinicius/Documents/ChururuGames/Git/TinyEaster/Assets/Plugins/UnityEngine.Cloud.dll</HintPath>
