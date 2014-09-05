@@ -19,18 +19,19 @@ public class UIFade : MonoBehaviour {
 		{
 			if(target.alpha > 0)
 			{
-				target.alpha -= (Time.deltaTime / 2);
+				target.alpha -= (Time.deltaTime / 1.5f);
 			}
 			else
 			{
-				fade = false;
+				StartCoroutine(WaitToFadeout(2));
+				//fade = false;
 			}
 		}
 		else
 		{
 			if(target.alpha < 1)
 			{
-				target.alpha += (Time.deltaTime / 2);
+				target.alpha += (Time.deltaTime / 1.5f);
 			}
 			else
 			{
@@ -39,5 +40,11 @@ public class UIFade : MonoBehaviour {
 		}
 
 
+	}
+
+	IEnumerator WaitToFadeout(float x)
+	{
+		yield return new WaitForSeconds(x);
+		fade = false;
 	}
 }

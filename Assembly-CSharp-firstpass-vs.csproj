@@ -175,7 +175,6 @@
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-th\auth_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-ms-rMY\auth_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-pt\common_strings.xml" />
-     <None Include="Assets\Extensions\GoogleMobileAd\Documentation\GMA_VersionNotes.txt" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\color\common_signin_btn_text_light.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-zh-rTW\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-in\common_strings.xml" />

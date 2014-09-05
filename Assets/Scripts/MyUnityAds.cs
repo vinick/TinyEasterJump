@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Advertisements;
 
 public class MyUnityAds : MonoBehaviour {
-	
+
 	private bool _campaignsAvailable = false;
 	
 	public GameObject freeEgg;
@@ -10,12 +11,16 @@ public class MyUnityAds : MonoBehaviour {
 	bool canShowAd;
 	
 	void Awake() {
+		/*
 		UnityAds.setCampaignsAvailableDelegate(UnityAdsCampaignsAvailable);
 		UnityAds.setHideDelegate(UnityAdsHide);
 		UnityAds.setShowDelegate(UnityAdsShow);
 		UnityAds.setCampaignsFetchFailedDelegate(UnityAdsCampaignsFetchFailed);
 		UnityAds.setVideoCompletedDelegate(UnityAdsVideoCompleted);
 		UnityAds.setVideoStartedDelegate(UnityAdsVideoStarted);
+		*/
+
+		//Advertisement.Initialize("13157");
 	}
 	
 	// Use this for initialization
@@ -33,7 +38,8 @@ public class MyUnityAds : MonoBehaviour {
 			freeEgg = GameObject.FindGameObjectWithTag("freeEgg");
 			freeEgg.gameObject.SetActive(false);
 		}
-		else if(UnityAds.canShowAds() && UnityAds.canShow() && canShowAd) 
+		//else if(UnityAds.canShowAds() && UnityAds.canShow() && canShowAd)
+		else if(Advertisement.isReady() && canShowAd)
 		{
 			canShowAd = false;
 			freeEgg.gameObject.SetActive(true);
@@ -73,4 +79,5 @@ public class MyUnityAds : MonoBehaviour {
 	{
 		UnityAds.show("16-default");
 	}
+
 }
